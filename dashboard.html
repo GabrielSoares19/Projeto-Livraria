@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sistema de Livraria</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Sistema de Livraria</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Início</a></li>
+        <li><a href="index.html">Cadastrar Livros</a></li>
+        <li><a href="reports.html">Relatórios</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="stats">
+      <h2>Estatísticas Gerais</h2>
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3>Total de Livros</h3>
+          <p id="total-books">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Editora Mais Popular</h3>
+          <p id="popular-publisher">-</p>
+        </div>
+        <div class="stat-card">
+          <h3>Último Livro Adicionado</h3>
+          <p id="last-added">-</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shortcuts">
+      <h2>Atalhos</h2>
+      <div class="shortcut-container">
+        <button onclick="navigateTo('index.html')">Cadastrar Livro</button>
+        <button onclick="navigateTo('reports.html')">Relatórios</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Sistema de Livraria</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
